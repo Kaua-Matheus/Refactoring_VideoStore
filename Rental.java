@@ -3,6 +3,7 @@ public class Rental {
 
     private Movie _movie;
     private int _daysRented;
+    private int frequentRenterPoints = 0;
  
     public Rental(Movie movie, int daysRented) {
        _movie = movie;
@@ -43,7 +44,7 @@ public class Rental {
         return thisAmount;
     }
 
-    public int getFrequentRenterPoints(int frequentRenterPoints) {
+    public int getFrequentRenterPoints() {
         // add frequent renter points
         frequentRenterPoints ++;
         // add bonus for a two day new release rental
