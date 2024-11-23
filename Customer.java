@@ -29,13 +29,13 @@ public class Customer {
     }
 
     public int getTotalFrequentRenterPoints(){
-    int result = 0;
-    Enumeration rentals = _rentals.elements();
-    while (rentals.hasMoreElements()) {
-        Rental each = (Rental) rentals.nextElement();
-        result += each.getFrequentRenterPoints();
+        int result = 0;
+        Enumeration rentals = _rentals.elements();
+        while (rentals.hasMoreElements()) {
+            Rental each = (Rental) rentals.nextElement();
+            result += each.getFrequentRenterPoints();
     }
-    return result;
+        return result;
     }
 
     public String htmlStatement() {
